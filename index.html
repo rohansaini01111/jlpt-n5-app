@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>JLPT N5 Trainer</title>
+
+<style>
+
+body{
+background:#0a0a0a;
+color:white;
+font-family:Arial;
+text-align:center;
+margin:0;
+}
+
+header{
+padding:20px;
+font-size:30px;
+color:#00ffff;
+text-shadow:0 0 15px #00ffff;
+}
+
+.lesson{
+margin:30px auto;
+width:200px;
+padding:20px;
+border-radius:20px;
+border:2px solid #00ffff;
+box-shadow:0 0 20px #00ffff;
+cursor:pointer;
+}
+
+.quiz{
+display:none;
+margin-top:30px;
+}
+
+.option{
+background:#222;
+padding:10px;
+margin:10px;
+border-radius:10px;
+border:1px solid #00ffff;
+cursor:pointer;
+}
+
+.option:hover{
+background:#00ffff;
+color:black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>JLPT N5 Practice</header>
+
+<div class="lesson" onclick="startQuiz()">
+Start Lesson
+</div>
+
+<div class="quiz" id="quiz">
+
+<h2>みず (mizu) means?</h2>
+
+<div class="option" onclick="correct()">Water</div>
+
+<div class="option" onclick="wrong()">Dog</div>
+
+<div class="option" onclick="wrong()">Book</div>
+
+<div class="option" onclick="wrong()">Car</div>
+
+</div>
+
+<script>
+
+function startQuiz(){
+document.getElementById("quiz").style.display="block"
+}
+
+function correct(){
+alert("Correct 🎉")
+}
+
+function wrong(){
+alert("Wrong ❌")
+}
+
+</script>
+
+</body>
+  </html>
