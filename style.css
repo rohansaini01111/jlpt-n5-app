@@ -74,3 +74,42 @@ font-size:14px;
 .menu a:hover{
 color:white;
 }
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#d18cff;
+text-shadow:0 0 20px #d18cff;
+}
+
+.stats{
+font-size:18px;
+display:flex;
+gap:15px;
+}
+
+.menu{
+display:flex;
+justify-content:center;
+gap:35px;
+margin-top:10px;
+}
+
+.menu a{
+text-decoration:none;
+color:#ff004c;
+font-weight:bold;
+font-size:18px;
+text-shadow:0 0 10px #ff004c;
+}
+
+.menu a:hover{
+color:white;
+text-shadow:0 0 20px #ff004c;
+}
