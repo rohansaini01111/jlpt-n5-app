@@ -6,21 +6,18 @@ padding:20px;
 }
 nav{
 display:flex;
-gap:30px;
 justify-content:center;
-flex-wrap:wrap;
-width:100%;
-margin-top:10px;
+gap:40px;
+margin-top:20px;
 }
 
 nav a{
+color:#ff004c;
+font-weight:bold;
+font-size:20px;
+letter-spacing:2px;
 text-decoration:none;
-color:#ff2b6e;
-font-weight:700;
-font-size:16px;
-letter-spacing:1px;
-padding:6px 10px;
-text-shadow:0 0 10px #ff2b6e, 0 0 20px #ff2b6e;
+text-shadow:0 0 10px #ff004c,0 0 20px #ff004c;
 }
 
 
