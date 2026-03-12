@@ -34,3 +34,21 @@ gap:30px;
 flex-wrap:wrap;
 margin-top:40px;
 }
+/* Mobile responsive header */
+@media (max-width:600px){
+
+.topbar{
+flex-direction:column;
+gap:10px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.stats{
+justify-content:center;
+}
+
+}
