@@ -25,3 +25,10 @@ display:flex;
 gap:15px;
 font-size:18px;
 }
+.path{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
