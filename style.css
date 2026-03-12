@@ -113,3 +113,52 @@ text-shadow:0 0 10px #ff004c;
 color:white;
 text-shadow:0 0 20px #ff004c;
 }
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:18px 30px;
+background:rgba(0,0,0,0.25);
+backdrop-filter: blur(10px);
+border-bottom:1px solid #2b004a;
+}
+
+/* Logo */
+
+.logo{
+font-size:32px;
+font-weight:800;
+color:#d18cff;
+letter-spacing:2px;
+text-shadow:0 0 15px #d18cff;
+}
+
+/* Menu */
+
+.menu{
+display:flex;
+gap:40px;
+}
+
+.menu a{
+text-decoration:none;
+font-size:18px;
+font-weight:700;
+color:#ff2b6e;
+letter-spacing:1px;
+transition:0.25s;
+}
+
+.menu a:hover{
+color:white;
+text-shadow:0 0 12px #ff2b6e;
+}
+
+/* XP + Streak */
+
+.stats{
+display:flex;
+gap:18px;
+font-size:17px;
+font-weight:700;
+  }
