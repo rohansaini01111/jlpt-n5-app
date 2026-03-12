@@ -56,3 +56,21 @@ justify-content:center;
 }
 
 }
+.menu{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:10px;
+}
+
+.menu a{
+text-decoration:none;
+color:#c77dff;
+font-weight:bold;
+font-size:14px;
+}
+
+.menu a:hover{
+color:white;
+}
