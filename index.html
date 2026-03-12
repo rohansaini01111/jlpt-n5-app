@@ -8,55 +8,82 @@
 
 <style>
 
-body{
-background:#0a0a0a;
-color:white;
-font-family:Arial;
-text-align:center;
-margin:0;
-}
-
-header{
-padding:20px;
-font-size:30px;
-color:#00ffff;
-text-shadow:0 0 15px #00ffff;
-}
-
-.lesson{
-margin:30px auto;
-width:200px;
-padding:20px;
-border-radius:20px;
-border:2px solid #00ffff;
-box-shadow:0 0 20px #00ffff;
-cursor:pointer;
-}
-
-.quiz{
-display:none;
-margin-top:30px;
-}
-
-.option{
-background:#222;
-padding:10px;
-margin:10px;
-border-radius:10px;
-border:1px solid #00ffff;
-cursor:pointer;
-}
-
-.option:hover{
-background:#00ffff;
-color:black;
-}
-
-</style>
-
-</head>
-
 <body>
+
+<header>JapaneseGO</header>
+<p>Learn Japanese the Smart Way 🚀</p>
+
+<div class="path">
+
+<div class="bubble" onclick="startQuiz(1)">1</div>
+
+<div class="bubble lock">2</div>
+
+<div class="bubble lock">3</div>
+
+<div class="bubble lock">4</div>
+
+<div class="bubble lock">5</div>
+
+</div>
+
+<div id="quiz" class="quiz">
+
+<h2 id="question"></h2>
+
+<div id="options"></div>
+
+</div>
+
+<script>
+
+const quizzes = {
+
+1:{
+q:"みず (mizu) means?",
+o:["Water","Dog","Book","Car"],
+c:0
+}
+
+}
+
+function startQuiz(n){
+
+let data = quizzes[n]
+
+document.getElementById("quiz").style.display="block"
+
+document.getElementById("question").innerText = data.q
+
+let html=""
+
+data.o.forEach((opt,i)=>{
+
+html += `<div class="option" onclick="answer(${i},${data.c})">${opt}</div>`
+
+})
+
+document.getElementById("options").innerHTML = html
+
+}
+
+function answer(sel,cor){
+
+if(sel==cor){
+
+alert("Correct 🎉")
+
+}else{
+
+alert("Wrong ❌")
+
+}
+
+}
+
+</script>
+
+</body>
 
 <header>JapaneseGO</header>
 
