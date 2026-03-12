@@ -4,26 +4,29 @@ justify-content:space-between;
 align-items:center;
 padding:20px;
 }
-
 nav{
 display:flex;
-gap:12px;
+gap:30px;
 justify-content:center;
 flex-wrap:wrap;
 width:100%;
-margin-top:5px;
+margin-top:10px;
 }
 
 nav a{
 text-decoration:none;
-color:#c77dff;
-font-weight:bold;
-font-size:14px;
-padding:4px 8px;
+color:#ff2b6e;
+font-weight:700;
+font-size:16px;
+letter-spacing:1px;
+padding:6px 10px;
+text-shadow:0 0 10px #ff2b6e, 0 0 20px #ff2b6e;
 }
 
+
 nav a:hover{
-color:white;
+color:#ff004c;
+text-shadow:0 0 15px #ff004c, 0 0 30px #ff004c;
 }
 
 .stats{
