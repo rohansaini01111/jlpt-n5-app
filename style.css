@@ -7,7 +7,9 @@ padding:20px;
 
 nav{
 display:flex;
-gap:15px;
+gap:20px;
+justify-content:center;
+flex:1;
 }
 
 nav a{
