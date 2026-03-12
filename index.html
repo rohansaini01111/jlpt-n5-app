@@ -8,19 +8,83 @@
 
 <style>
 
+body{
+background:#0a0a0a;
+color:white;
+font-family:Arial;
+text-align:center;
+margin:0;
+}
+
+header{
+padding:20px;
+font-size:35px;
+color:#00ffff;
+text-shadow:0 0 20px #00ffff;
+}
+
+.path{
+margin-top:40px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.bubble{
+width:80px;
+height:80px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#111;
+border:3px solid #00ffff;
+box-shadow:0 0 15px #00ffff;
+cursor:pointer;
+font-size:20px;
+}
+
+.lock{
+opacity:0.3;
+border:3px solid gray;
+box-shadow:none;
+}
+
+.quiz{
+display:none;
+margin-top:30px;
+}
+
+.option{
+background:#222;
+padding:10px;
+margin:10px;
+border-radius:10px;
+border:1px solid #00ffff;
+cursor:pointer;
+}
+
+.option:hover{
+background:#00ffff;
+color:black;
+}
+
+</style>
+
+</head>
+
+<body>
+
 <header>JapaneseGO</header>
 <p>Learn Japanese the Smart Way 🚀</p>
 
 <div class="path">
 
 <div class="bubble" onclick="startQuiz(1)">1</div>
-
 <div class="bubble lock">2</div>
-
 <div class="bubble lock">3</div>
-
 <div class="bubble lock">4</div>
-
 <div class="bubble lock">5</div>
 
 </div>
@@ -81,41 +145,5 @@ alert("Wrong ❌")
 
 </script>
 
-<header>JapaneseGO</header>
-
-<div class="lesson" onclick="startQuiz()">
-Start Lesson
-</div>
-
-<div class="quiz" id="quiz">
-
-<h2>みず (mizu) means?</h2>
-
-<div class="option" onclick="correct()">Water</div>
-
-<div class="option" onclick="wrong()">Dog</div>
-
-<div class="option" onclick="wrong()">Book</div>
-
-<div class="option" onclick="wrong()">Car</div>
-
-</div>
-
-<script>
-
-function startQuiz(){
-document.getElementById("quiz").style.display="block"
-}
-
-function correct(){
-alert("Correct 🎉")
-}
-
-function wrong(){
-alert("Wrong ❌")
-}
-
-</script>
-
 </body>
-  </html>
+</html>
