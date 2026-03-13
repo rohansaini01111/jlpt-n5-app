@@ -50,17 +50,14 @@ box-shadow:0 0 40px #ef4444;
 /* Section titles */
 .section-title{
 margin-top:50px;
-font-size:22px;
-letter-spacing:4px;
+font-size:24px;
+letter-spacing:5px;
+font-weight:bold;
 }
 
 /* Continue card */
 .continue{
-margin:25px auto;
-background:rgba(255,255,255,0.08);
-padding:20px;
-width:320px;
-border-radius:20px;
+margin:20px auto;
 font-size:18px;
 }
 
@@ -70,7 +67,7 @@ display:grid;
 grid-template-columns:repeat(2,220px);
 justify-content:center;
 gap:30px;
-margin-top:40px;
+margin-top:70px;
 }
 /* Cards */
 .card{
@@ -83,10 +80,11 @@ cursor:pointer;
 backdrop-filter:blur(10px);
 transition:0.3s;
 box-shadow:0 10px 25px rgba(0,0,0,0.3);
+transform:translateY(0);
 }
 
 .card:hover{
-transform:scale(1.08);
+transform:translateY(-8px) scale(1.05);
 background:#ef4444;
 }
 
