@@ -332,3 +332,37 @@ background:#22c55e;
 border-radius:10px;
 transition:width 0.5s;
 }
+.hiragana-table{
+width:90%;
+max-width:700px;
+margin:40px auto;
+padding:25px;
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+.hiragana-table h2{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.hiragana-table table{
+width:100%;
+border-collapse:collapse;
+}
+
+.hiragana-table th,
+.hiragana-table td{
+padding:12px;
+font-size:26px;
+text-align:center;
+}
+
+.hiragana-table td{
+background:rgba(255,255,255,0.1);
+border-radius:10px;
+  }
