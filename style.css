@@ -17,14 +17,16 @@ backdrop-filter:blur(10px);
 }
 
 h1{
-font-size:40px;
-letter-spacing:2px;
+font-size:55px;
+letter-spacing:3px;
 margin:0;
+font-weight:700;
 }
 
 p{
-font-size:18px;
+font-size:20px;
 opacity:0.8;
+margin-top:8px;
 }
 
 /* Start button */
