@@ -136,3 +136,21 @@ border-radius:20px;
 display:inline-block;
 margin-top:20px;
 }
+.back-btn{
+display:block;
+margin:50px auto;
+width:160px;
+text-align:center;
+padding:15px;
+border-radius:40px;
+background:#ef4444;
+color:white;
+font-weight:bold;
+font-size:18px;
+box-shadow:0 0 25px #ef4444;
+transition:0.3s;
+}
+
+.back-btn:hover{
+transform:scale(1.1);
+  }
