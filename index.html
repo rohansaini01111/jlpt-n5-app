@@ -63,4 +63,14 @@ let xp = localStorage.getItem("xp") || 0
 
 document.getElementById("xp").innerText = xp
 
+<script>
+
+let xp = localStorage.getItem("xp") || 0
+
+document.getElementById("xp").innerText = xp
+
+let percent = (xp % 100)
+
+document.getElementById("xp-fill").style.width = percent + "%"
+
 </script>
