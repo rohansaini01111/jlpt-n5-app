@@ -14,6 +14,9 @@ header{
 background:rgba(255,255,255,0.05);
 padding:30px;
 backdrop-filter:blur(10px);
+text-align:center;
+padding-top:60px;
+padding-bottom:30px;
 }
 
 h1{
@@ -25,21 +28,22 @@ font-weight:700;
 
 p{
 font-size:20px;
-opacity:0.8;
-margin-top:8px;
+opacity:0.85;
+margin-top:10px;
+margin-bottom:35px;
 }
 
 /* Start button */
 .start-btn{
-margin-top:30px;
-padding:20px 50px;
-font-size:22px;
+display:inline-block;
+margin-top:10px;
+padding:18px 45px;
+font-size:20px;
 font-weight:bold;
 background:#ef4444;
-border:none;
-border-radius:50px;
+border-radius:40px;
 color:white;
-cursor:pointer;
+text-decoration:none;
 box-shadow:0 0 25px #ef4444;
 transition:0.3s;
 }
