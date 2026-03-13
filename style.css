@@ -67,29 +67,27 @@ font-size:18px;
 /* Cards grid */
 .modules{
 display:grid;
-grid-template-columns:repeat(2,240px);
+grid-template-columns:repeat(2,220px);
 justify-content:center;
-gap:35px;
+gap:30px;
 margin-top:40px;
 }
-
 /* Cards */
 .card{
 background:rgba(255,255,255,0.08);
-padding:40px;
-border-radius:22px;
+padding:30px;
+border-radius:20px;
+font-size:20px;
 font-weight:bold;
-font-size:22px;
 cursor:pointer;
+backdrop-filter:blur(10px);
 transition:0.3s;
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .card:hover{
 transform:scale(1.08);
-background:#22c55e;
-color:black;
-box-shadow:0 0 30px #22c55e;
+background:#ef4444;
 }
 
 /* Progress */
@@ -126,4 +124,15 @@ transform:translateY(-100px) translateX(0);
 100%{
 transform:translateY(100vh) translateX(100px);
 }
+}
+a{
+text-decoration:none;
+color:white;
+  }
+.continue{
+background:rgba(255,255,255,0.08);
+padding:15px 25px;
+border-radius:20px;
+display:inline-block;
+margin-top:20px;
 }
