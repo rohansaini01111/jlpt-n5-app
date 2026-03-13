@@ -49,8 +49,7 @@ document.getElementById("result").innerHTML="❌ Wrong answer"
 
 <script>
 
-let xp = 120
-
+let xp = localStorage.getItem("xp") || 0
 let questions = [
 {
 question:"What is this?",
@@ -95,6 +94,7 @@ function checkAnswer(answer){
 if(answer === questions[current].correct){
 document.getElementById("result").innerHTML = "✅ Correct +10 XP"
 xp += 10
+localStorage.setItem("xp", xp)
 }else{
 document.getElementById("result").innerHTML = "❌ Wrong"
 }
