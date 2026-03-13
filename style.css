@@ -316,3 +316,19 @@ transition:0.2s;
 background:#ef4444;
 color:white;
   }
+.xp-bar{
+width:250px;
+height:14px;
+background:rgba(255,255,255,0.2);
+border-radius:10px;
+margin:10px auto;
+overflow:hidden;
+}
+
+#xp-fill{
+height:100%;
+width:0%;
+background:#22c55e;
+border-radius:10px;
+transition:width 0.5s;
+}
