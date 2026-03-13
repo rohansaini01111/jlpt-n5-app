@@ -6,8 +6,8 @@ text-align:center;
 
 /* Japanese deep blue theme */
 background:
-radial-gradient(circle at 20% 30%, rgba(255,120,120,0.15), transparent 40%),
-radial-gradient(circle at 80% 70%, rgba(120,170,255,0.15), transparent 40%),
+radial-gradient(circle at 20% 30%, rgba(255,100,100,0.25), transparent 40%),
+radial-gradient(circle at 80% 70%, rgba(100,160,255,0.25), transparent 40%),
 linear-gradient(180deg,#020617,#0f172a,#1e3a8a,#2563eb,#1e40af);
 
 min-height:100vh
