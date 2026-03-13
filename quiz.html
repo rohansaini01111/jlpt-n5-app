@@ -47,6 +47,79 @@ document.getElementById("result").innerHTML="❌ Wrong answer"
 
 }
 
+<script>
+
+let xp = 120
+
+let questions = [
+{
+question:"What is this?",
+japanese:"あ",
+options:["a","i","u"],
+correct:"a"
+},
+{
+question:"What is this?",
+japanese:"い",
+options:["a","i","e"],
+correct:"i"
+},
+{
+question:"What is this?",
+japanese:"う",
+options:["o","u","a"],
+correct:"u"
+}
+]
+
+let current = 0
+
+function loadQuestion(){
+
+document.getElementById("question").innerText =
+questions[current].question
+
+document.querySelector(".japanese").innerText =
+questions[current].japanese
+
+let buttons = document.querySelectorAll(".options button")
+
+buttons[0].innerText = "A) " + questions[current].options[0]
+buttons[1].innerText = "B) " + questions[current].options[1]
+buttons[2].innerText = "C) " + questions[current].options[2]
+
+}
+
+function checkAnswer(answer){
+
+if(answer === questions[current].correct){
+document.getElementById("result").innerHTML = "✅ Correct +10 XP"
+xp += 10
+}else{
+document.getElementById("result").innerHTML = "❌ Wrong"
+}
+
+current++
+
+if(current < questions.length){
+
+setTimeout(()=>{
+document.getElementById("result").innerHTML=""
+loadQuestion()
+},1000)
+
+}else{
+
+document.getElementById("question").innerHTML="Quiz Finished 🎉"
+document.querySelector(".japanese").innerHTML=""
+document.querySelector(".options").innerHTML="Score XP: "+xp
+
+}
+
+}
+
+loadQuestion()
+
 </script>
 
 </body>
