@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+<title>Quiz - JapaneseGO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🧠 JLPT N5 Quiz</h1>
+<p>Choose the correct answer</p>
+</header>
+
+<div class="quiz-box">
+
+<h2 id="question">What is this?</h2>
+
+<div class="japanese">あ</div>
+
+<div class="options">
+<button onclick="checkAnswer('a')">A) a</button>
+<button onclick="checkAnswer('i')">B) i</button>
+<button onclick="checkAnswer('u')">C) u</button>
+</div>
+
+<p id="result"></p>
+
+<a href="index.html" class="back-btn">⬅ Back</a>
+
+</div>
+
+<script>
+
+let xp = 120
+
+function checkAnswer(answer){
+
+if(answer === "a"){
+document.getElementById("result").innerHTML="✅ Correct! +10 XP"
+xp += 10
+}
+else{
+document.getElementById("result").innerHTML="❌ Wrong answer"
+}
+
+}
+
+</script>
+
+</body>
+</html>
