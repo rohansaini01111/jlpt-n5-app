@@ -483,6 +483,7 @@ padding:18px 35px;
 font-size:22px;
 color:white;
 box-shadow:0 5px 20px rgba(0,0,0,0.2);
+border:1px solid rgba(255,255,255,0.2);
 cursor:pointer;
 transition:0.3s;
 }
