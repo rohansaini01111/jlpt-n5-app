@@ -1,3 +1,10 @@
+:root{
+
+--bg-overlay: rgba(255,255,255,0.12);
+--glass: rgba(255,255,255,0.15);
+--text-color: white;
+
+}
 body{
 margin:0;
 font-family:Arial, sans-serif;
@@ -338,7 +345,7 @@ max-width:700px;
 margin:40px auto;
 padding:25px;
 
-background:rgba(255,255,255,0.15);
+background: var(--glass);
 backdrop-filter:blur(10px);
 
 border-radius:20px;
@@ -469,7 +476,7 @@ max-width:400px;
 }
 
 .card{
-background:rgba(255,255,255,0.15);
+background: var(--glass);
 backdrop-filter:blur(10px);
 border-radius:15px;
 padding:18px 35px;
@@ -484,7 +491,7 @@ transition:0.3s;
 transform:translateY(-5px);
   }
 .page-title{
-background: rgba(255,255,255,0.15);
+background: var(--glass);
 backdrop-filter: blur(15px);
 border-radius:20px;
 padding:20px;
@@ -560,6 +567,17 @@ max-width:500px;
 .card{
 font-size:26px;
 padding:25px 40px;
+}
+
+  }
+@media (prefers-color-scheme: dark){
+
+:root{
+
+--bg-overlay: rgba(0,0,0,0.35);
+--glass: rgba(0,0,0,0.45);
+--text-color: #f2f2f2;
+
 }
 
   }
