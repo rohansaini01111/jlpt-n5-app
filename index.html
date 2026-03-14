@@ -55,13 +55,7 @@ XP: <span id="xp">0</span> | 🔥 Streak: 3
 
 </div>
 </div>
-</div><script src="script.js"></script></body>
-</html>
-<script>
-
-let xp = localStorage.getItem("xp") || 0
-
-document.getElementById("xp").innerText = xp
+<script src="script.js"></script>
 
 <script>
 
@@ -73,4 +67,26 @@ let percent = (xp % 100)
 
 document.getElementById("xp-fill").style.width = percent + "%"
 
+function flip(card){
+card.classList.toggle("flipped")
+}
+
+const sakuraContainer = document.querySelector(".sakura-container")
+
+for(let i=0;i<20;i++){
+
+let sakura=document.createElement("div")
+sakura.classList.add("sakura")
+
+sakura.style.left=Math.random()*100+"vw"
+sakura.style.animationDuration=(5+Math.random()*5)+"s"
+sakura.style.opacity=Math.random()
+
+sakuraContainer.appendChild(sakura)
+
+}
+
 </script>
+
+</body>
+</html>
