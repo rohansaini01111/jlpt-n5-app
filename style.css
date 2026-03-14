@@ -656,11 +656,16 @@ text-align:center;
 }
 
 #vocab-table th{
-font-size:18px;
-opacity:0.9;
+font-size:22px;
+padding:10px;
 }
 
 #vocab-table td{
-font-size:16px;
-padding:5px;
+font-size:20px;
+padding:12px;
+}
+
+#vocab-table td:first-child{
+font-size:24px;
+font-weight:bold;
   }
