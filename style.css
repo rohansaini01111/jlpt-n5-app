@@ -390,3 +390,9 @@ transform:scale(1.1);
 transition:0.2s;
 cursor:pointer;
   }
+.hiragana-table td:active{
+transform:scale(0.9);
+}
+.hiragana-table tr:hover td{
+background:rgba(255,255,255,0.18);
+}
