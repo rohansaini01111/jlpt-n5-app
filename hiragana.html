@@ -60,7 +60,7 @@
 
 <tr>
 <th>s</th>
-<<td onclick="playSound('sa')">さ</td>
+<td onclick="playSound('sa')">さ</td>
 <td onclick="playSound('shi')">し</td>
 <td onclick="playSound('su')">す</td>
 <td onclick="playSound('se')">せ</td>
@@ -267,19 +267,15 @@
   </div>
 <a href="index.html" class="back-btn">← Back</a>
 <script>
-function flip(card){
-card.classList.toggle("flipped")
-}
-</script>
-<script>
 
 function playSound(sound){
 
-let audio = new Audio("sounds/" + sound + ".mp3");
+let audio = new Audio("sounds/" + sound + ".mp3")
 
-audio.play();
+audio.play()
 
 }
+
 </script>
 </body>
 </html>  
