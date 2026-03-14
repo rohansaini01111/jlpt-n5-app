@@ -406,3 +406,21 @@ transform:scale(0.85);
 background:rgba(255,255,255,0.35);
 box-shadow:0 0 20px rgba(255,255,255,0.6);
 }
+table{
+width:100%;
+max-width:600px;
+margin:auto;
+border-collapse:separate;
+border-spacing:10px;
+text-align:center;
+}
+
+td,th{
+padding:8px 12px;
+}
+.hiragana-table{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:40px;
+}
