@@ -1,1 +1,151 @@
+<div class="modules">
 
+<div class="card" onclick="flip(this)">
+<span class="front">ア</span>
+<span class="back">a</span>
+</div>
+
+<div class="card" onclick="flip(this)">
+<span class="front">イ</span>
+<span class="back">i</span>
+</div>
+
+<div class="card" onclick="flip(this)">
+<span class="front">ウ</span>
+<span class="back">u</span>
+</div>
+
+<div class="card" onclick="flip(this)">
+<span class="front">エ</span>
+<span class="back">e</span>
+</div>
+
+<div class="card" onclick="flip(this)">
+<span class="front">オ</span>
+<span class="back">o</span>
+</div>
+
+  </div>
+<div class="hiragana-table">
+
+<h2>Main Katakana</h2>
+
+<table>
+
+<tr>
+<th></th>
+<th>a</th>
+<th>i</th>
+<th>u</th>
+<th>e</th>
+<th>o</th>
+</tr>
+
+<tr>
+<th></th>
+<td onclick="playSound('ア')">ア</td>
+<td onclick="playSound('イ')">イ</td>
+<td onclick="playSound('ウ')">ウ</td>
+<td onclick="playSound('エ')">エ</td>
+<td onclick="playSound('オ')">オ</td>
+</tr>
+
+<tr>
+<th>k</th>
+<td onclick="playSound('カ')">カ</td>
+<td onclick="playSound('キ')">キ</td>
+<td onclick="playSound('ク')">ク</td>
+<td onclick="playSound('ケ')">ケ</td>
+<td onclick="playSound('コ')">コ</td>
+</tr>
+
+<tr>
+<th>s</th>
+<td onclick="playSound('サ')">サ</td>
+<td onclick="playSound('シ')">シ</td>
+<td onclick="playSound('ス')">ス</td>
+<td onclick="playSound('セ')">セ</td>
+<td onclick="playSound('ソ')">ソ</td>
+</tr>
+
+<tr>
+<th>t</th>
+<td onclick="playSound('タ')">タ</td>
+<td onclick="playSound('チ')">チ</td>
+<td onclick="playSound('ツ')">ツ</td>
+<td onclick="playSound('テ')">テ</td>
+<td onclick="playSound('ト')">ト</td>
+</tr>
+
+<tr>
+<th>n</th>
+<td onclick="playSound('ナ')">ナ</td>
+<td onclick="playSound('ニ')">ニ</td>
+<td onclick="playSound('ヌ')">ヌ</td>
+<td onclick="playSound('ネ')">ネ</td>
+<td onclick="playSound('ノ')">ノ</td>
+</tr>
+
+<tr>
+<th>h</th>
+<td onclick="playSound('ハ')">ハ</td>
+<td onclick="playSound('ヒ')">ヒ</td>
+<td onclick="playSound('フ')">フ</td>
+<td onclick="playSound('ヘ')">ヘ</td>
+<td onclick="playSound('ホ')">ホ</td>
+</tr>
+
+<tr>
+<th>m</th>
+<td onclick="playSound('マ')">マ</td>
+<td onclick="playSound('ミ')">ミ</td>
+<td onclick="playSound('ム')">ム</td>
+<td onclick="playSound('メ')">メ</td>
+<td onclick="playSound('モ')">モ</td>
+</tr>
+
+<tr>
+<th>y</th>
+<td onclick="playSound('ヤ')">ヤ</td>
+<td></td>
+<td onclick="playSound('ユ')">ユ</td>
+<td></td>
+<td onclick="playSound('ヨ')">ヨ</td>
+</tr>
+
+<tr>
+<th>r</th>
+<td onclick="playSound('ラ')">ラ</td>
+<td onclick="playSound('リ')">リ</td>
+<td onclick="playSound('ル')">ル</td>
+<td onclick="playSound('レ')">レ</td>
+<td onclick="playSound('ロ')">ロ</td>
+</tr>
+
+<tr>
+<th>w</th>
+<td onclick="playSound('ワ')">ワ</td>
+<td></td>
+<td></td>
+<td></td>
+<td onclick="playSound('ヲ')">ヲ</td>
+</tr>
+
+<tr>
+<th>n</th>
+<td onclick="playSound('ン')">ン</td>
+</tr>
+
+</table>
+
+  </div>
+function playSound(kana){
+
+let msg = new SpeechSynthesisUtterance(kana)
+
+msg.lang = "ja-JP"
+
+speechSynthesis.cancel()
+speechSynthesis.speak(msg)
+
+}
