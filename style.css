@@ -362,7 +362,18 @@ font-size:26px;
 text-align:center;
 }
 
-.hiragana-table td{
-background:rgba(255,255,255,0.1);
-border-radius:10px;
+.hiragana-table{
+width:90%;
+max-width:700px;
+margin:40px auto;
+padding:30px;
+
+background: rgba(255,255,255,0.28);
+
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+
+border-radius:20px;
+
+box-shadow:0 15px 50px rgba(0,0,0,0.35);
   }
