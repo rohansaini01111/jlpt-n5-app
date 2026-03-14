@@ -396,3 +396,13 @@ transform:scale(0.9);
 .hiragana-table tr:hover td{
 background:rgba(255,255,255,0.18);
 }
+td{
+cursor:pointer;
+transition:all 0.2s ease;
+}
+
+td:active{
+transform:scale(0.85);
+background:rgba(255,255,255,0.35);
+box-shadow:0 0 20px rgba(255,255,255,0.6);
+}
