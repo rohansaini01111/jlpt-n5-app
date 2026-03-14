@@ -42,101 +42,92 @@
 
 <tr>
 <th></th>
-<td>あ</td>
-<td>い</td>
-<td>う</td>
-<td>え</td>
-<td>お</td>
+<td onclick="playSound('a')">あ</td>
+<td onclick="playSound('i')">い</td>
+<td onclick="playSound('u')">う</td>
+<td onclick="playSound('e')">え</td>
+<td onclick="playSound('o')">お</td>
 </tr>
 
 <tr>
 <th>k</th>
-<td>か</td>
-<td>き</td>
-<td>く</td>
-<td>け</td>
-<td>こ</td>
+<td onclick="playSound('ka')">か</td>
+<td onclick="playSound('ki')">き</td>
+<td onclick="playSound('ku')">く</td>
+<td onclick="playSound('ke')">け</td>
+<td onclick="playSound('ko')">こ</td>
 </tr>
 
 <tr>
 <th>s</th>
-<td>さ</td>
-<td>し</td>
-<td>す</td>
-<td>せ</td>
-<td>そ</td>
+<<td onclick="playSound('sa')">さ</td>
+<td onclick="playSound('shi')">し</td>
+<td onclick="playSound('su')">す</td>
+<td onclick="playSound('se')">せ</td>
+<td onclick="playSound('so')">そ
 </tr>
-
+  
 <tr>
-<th>t</th>
-<td>た</td>
-<td>ち</td>
-<td>つ</td>
-<td>て</td>
-<td>と</td>
+<ts>t</th>
+<td onclick="playSound('ta')">た</td>
+<td onclick="playSound('chi')">ち</td>
+<td onclick="playSound('tsu')">つ</td>
+<td onclick="playSound('te')">て</td>
+<td onclick="playSound('to')">と</td>
 </tr>
 
 <tr>
 <th>n</th>
-<td>な</td>
-<td>に</td>
-<td>ぬ</td>
-<td>ね</td>
-<td>の</td>
+<td onclick="playSound('na')">な</td>
+<td onclick="playSound('ni')">に</td>
+<td onclick="playSound('nu')">ぬ</td>
+<td onclick="playSound('ne')">ね</td>
+<td onclick="playSound('no')">の</td>
 </tr>
 
 <tr>
 <th>h</th>
-<td>は</td>
-<td>ひ</td>
-<td>ふ</td>
-<td>へ</td>
-<td>ほ</td>
+<td onclick="playSound('ha')">は</td>
+<td onclick="playSound('hi')">ひ</td>
+<td onclick="playSound('fu')">ふ</td>
+<td onclick="playSound('he')">へ</td>
+<td onclick="playSound('ho')">ほ</td>
 </tr>
 
 <tr>
 <th>m</th>
-<td>ま</td>
-<td>み</td>
-<td>む</td>
-<td>め</td>
-<td>も</td>
+<td onclick="playSound('ma')">ま</td>
+<td onclick="playSound('mi')">み</td>
+<td onclick="playSound('mu')">む</td>
+<td onclick="playSound('me')">め</td>
+<td onclick="playSound('mo')">も</td>
 </tr>
 
 <tr>
 <th>y</th>
-<td>や</td>
-<td></td>
-<td>ゆ</td>
-<td></td>
-<td>よ</td>
+<td onclick="playSound('ya')">や</td>
+<td onclick="playSound('yu')">ゆ</td>
+<td onclick="playSound('yo')">よ</td>
 </tr>
 
 <tr>
 <th>r</th>
-<td>ら</td>
-<td>り</td>
-<td>る</td>
-<td>れ</td>
-<td>ろ</td>
+<td onclick="playSound('ra')">ら</td>
+<td onclick="playSound('ri')">り</td>
+<td onclick="playSound('ru')">る</td>
+<td onclick="playSound('re')">れ</td>
+<td onclick="playSound('ro')">ろ</td>
 </tr>
 
 <tr>
 <th>w</th>
-<td>わ</td>
-<td></td>
-<td></td>
-<td></td>
-<td>を</td>
+<td onclick="playSound('wa')">わ</td>
+<td onclick="playSound('wo')">を</td>
 </tr>
 
 <tr>
 <th>n</th>
-<td>ん</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td onclick="playSound('n')">ん</td>
 </tr>
 
 </table>
@@ -278,6 +269,16 @@
 <script>
 function flip(card){
 card.classList.toggle("flipped")
+}
+</script>
+<script>
+
+function playSound(sound){
+
+let audio = new Audio("sounds/" + sound + ".mp3");
+
+audio.play();
+
 }
 </script>
 </body>
