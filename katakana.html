@@ -139,13 +139,22 @@
 </table>
 
   </div>
+
+<script>
 function playSound(kana){
 
 let msg = new SpeechSynthesisUtterance(kana)
-
 msg.lang = "ja-JP"
+
+let voices = speechSynthesis.getVoices()
+msg.voice = voices.find(v => v.lang === "ja-JP")
 
 speechSynthesis.cancel()
 speechSynthesis.speak(msg)
 
+
+function flip(card){
+card.classList.toggle("flipped")
 }
+
+  </script>
