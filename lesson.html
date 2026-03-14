@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+<title>Vocabulary Lesson</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 id="lesson-title">Vocabulary</h1>
+
+<table id="vocab-table">
+
+<tr>
+<th>Japanese</th>
+<th>Romaji</th>
+<th>Meaning</th>
+</tr>
+
+</table>
+
+<script src="vocab.js"></script>
+
+<script>
+
+const params = new URLSearchParams(window.location.search)
+
+const lessonName = params.get("lesson")
+
+const words = vocabulary[lessonName]
+
+document.getElementById("lesson-title").innerText =
+lessonName.toUpperCase()
+
+const table = document.getElementById("vocab-table")
+
+words.forEach(word => {
+
+let row = document.createElement("tr")
+
+row.innerHTML = `
+<td>${word.jp}</td>
+<td>${word.romaji}</td>
+<td>${word.en}</td>
+`
+
+table.appendChild(row)
+
+})
+
+</script>
+
+</body>
+</html>
