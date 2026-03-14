@@ -25,22 +25,37 @@
 </table>
 </div>
 
+<h2 class="section-title">Countries / Extra Words</h2>
+
+<div class="vocab-container">
+
+<table id="extra-table">
+
+<tr>
+<th>Japanese</th>
+<th>Romaji</th>
+<th>Meaning</th>
+</tr>
+
+</table>
+
+</div>
+
 <script src="vocab.js"></script>
 
-<script>
-
+</script>
+  
 const params = new URLSearchParams(window.location.search)
 
 const lessonName = params.get("lesson")
 
-const words = vocabulary[lessonName]
+const lesson = vocabulary[lessonName]
 
-document.getElementById("lesson-title").innerText =
-lessonName.toUpperCase()
+/* MAIN VOCAB */
 
-const table = document.getElementById("vocab-table")
+const mainTable = document.getElementById("vocab-table")
 
-words.forEach(word => {
+lesson.main.forEach(word => {
 
 let row = document.createElement("tr")
 
@@ -50,11 +65,26 @@ row.innerHTML = `
 <td>${word.en}</td>
 `
 
-table.appendChild(row)
+mainTable.appendChild(row)
+
+})
+
+/* EXTRA WORDS */
+
+const extraTable = document.getElementById("extra-table")
+
+lesson.extra.forEach(word => {
+
+let row = document.createElement("tr")
+
+row.innerHTML = `
+<td>${word.jp}</td>
+<td>${word.romaji}</td>
+<td>${word.en}</td>
+`
+
+extraTable.appendChild(row)
 
 })
 
 </script>
-
-</body>
-</html>
