@@ -16,6 +16,8 @@ lesson1: [
 {jp:"いしゃ", romaji:"isha", en:"doctor"},
 {jp:"けんきゅうしゃ", romaji:"kenkyuusha", en:"researcher"},
 {jp:"エンジニア", romaji:"enjinia", en:"engineer"}
+{jp:"だれ", romaji:"dare", en:"who"},
+{jp:"どなた", romaji:"donata", en:"who (polite)"}
 
 ]
 
