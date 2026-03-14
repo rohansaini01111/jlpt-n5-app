@@ -8,7 +8,13 @@
 
 <body>
   
-<div class="sakura-container"></div>
+<div class="sakura-container">
+<span style="left:10%; animation-delay:0s;"></span>
+<span style="left:30%; animation-delay:2s;"></span>
+<span style="left:50%; animation-delay:4s;"></span>
+<span style="left:70%; animation-delay:1s;"></span>
+<span style="left:90%; animation-delay:3s;"></span>
+</div>
   
 <div class="page-title">
 <h1>Katakana Flashcards</h1>
@@ -283,8 +289,23 @@ msg.voice = voices.find(v => v.lang === "ja-JP")
 speechSynthesis.cancel()
 speechSynthesis.speak(msg)
 
+ }
 
 function flip(card){
 card.classList.toggle("flipped")
 }
+  const sakuraContainer = document.querySelector(".sakura-container");
+
+for(let i=0;i<20;i++){
+
+let sakura=document.createElement("div");
+sakura.classList.add("sakura");
+
+sakura.style.left=Math.random()*100+"vw";
+sakura.style.animationDuration=(5+Math.random()*5)+"s";
+sakura.style.opacity=Math.random();
+
+sakuraContainer.appendChild(sakura);
+
+  }
 </script>
