@@ -23,115 +23,58 @@
 </div>
 
 </div>
-  <div class="hiragana-table">
+ <div class="hiragana-table">
 
-  <div class="hiragana-table">
-
-<h2>Main Hiragana</h2>
+<h2>Dakuten / Handakuten</h2>
 
 <table>
 
 <tr>
-<th></th>
-<th>a</th>
-<th>i</th>
-<th>u</th>
-<th>e</th>
-<th>o</th>
+<th>g</th>
+<td>が</td>
+<td>ぎ</td>
+<td>ぐ</td>
+<td>げ</td>
+<td>ご</td>
 </tr>
 
 <tr>
-<th></th>
-<td onclick="playSound('a')">あ</td>
-<td onclick="playSound('i')">い</td>
-<td onclick="playSound('u')">う</td>
-<td onclick="playSound('e')">え</td>
-<td onclick="playSound('o')">お</td>
+<th>z</th>
+<td>ざ</td>
+<td>じ</td>
+<td>ず</td>
+<td>ぜ</td>
+<td>ぞ</td>
 </tr>
 
 <tr>
-<th>k</th>
-<td onclick="playSound('ka')">か</td>
-<td onclick="playSound('ki')">き</td>
-<td onclick="playSound('ku')">く</td>
-<td onclick="playSound('ke')">け</td>
-<td onclick="playSound('ko')">こ</td>
+<th>d</th>
+<td>だ</td>
+<td>ぢ</td>
+<td>づ</td>
+<td>で</td>
+<td>ど</td>
 </tr>
 
 <tr>
-<th>s</th>
-<td onclick="playSound('sa')">さ</td>
-<td onclick="playSound('shi')">し</td>
-<td onclick="playSound('su')">す</td>
-<td onclick="playSound('se')">せ</td>
-<td onclick="playSound('so')">そ</td>
-</tr>
-  
-<tr>
-<th>t</th>
-<td onclick="playSound('ta')">た</td>
-<td onclick="playSound('chi')">ち</td>
-<td onclick="playSound('tsu')">つ</td>
-<td onclick="playSound('te')">て</td>
-<td onclick="playSound('to')">と</td>
+<th>b</th>
+<td>ば</td>
+<td>び</td>
+<td>ぶ</td>
+<td>べ</td>
+<td>ぼ</td>
 </tr>
 
 <tr>
-<th>n</th>
-<td onclick="playSound('na')">な</td>
-<td onclick="playSound('ni')">に</td>
-<td onclick="playSound('nu')">ぬ</td>
-<td onclick="playSound('ne')">ね</td>
-<td onclick="playSound('no')">の</td>
-</tr>
-
-<tr>
-<th>h</th>
-<td onclick="playSound('ha')">は</td>
-<td onclick="playSound('hi')">ひ</td>
-<td onclick="playSound('fu')">ふ</td>
-<td onclick="playSound('he')">へ</td>
-<td onclick="playSound('ho')">ほ</td>
-</tr>
-
-<tr>
-<th>m</th>
-<td onclick="playSound('ma')">ま</td>
-<td onclick="playSound('mi')">み</td>
-<td onclick="playSound('mu')">む</td>
-<td onclick="playSound('me')">め</td>
-<td onclick="playSound('mo')">も</td>
-</tr>
-
-<tr>
-<th>y</th>
-<td onclick="playSound('ya')">や</td>
-<td onclick="playSound('yu')">ゆ</td>
-<td onclick="playSound('yo')">よ</td>
-</tr>
-
-<tr>
-<th>r</th>
-<td onclick="playSound('ra')">ら</td>
-<td onclick="playSound('ri')">り</td>
-<td onclick="playSound('ru')">る</td>
-<td onclick="playSound('re')">れ</td>
-<td onclick="playSound('ro')">ろ</td>
-</tr>
-
-<tr>
-<th>w</th>
-<td onclick="playSound('wa')">わ</td>
-<td onclick="playSound('wo')">を</td>
-</tr>
-
-<tr>
-<th>n</th>
-<td onclick="playSound('n')">ん</td>
+<th>p</th>
+<td>ぱ</td>
+<td>ぴ</td>
+<td>ぷ</td>
+<td>ぺ</td>
+<td>ぽ</td>
 </tr>
 
 </table>
-
   </div>
 
 <h2>Dakuten / Handakuten</h2>
@@ -268,14 +211,30 @@
 <a href="index.html" class="back-btn">← Back</a>
 <script>
 
-function playSound(sound){
+document.querySelectorAll("td").forEach(cell => {
 
-let audio = new Audio("sounds/" + sound + ".mp3")
+cell.addEventListener("click", () => {
 
-audio.play()
+let kana = cell.textContent.trim()
+
+if(kana !== ""){
+
+let speech = new SpeechSynthesisUtterance(kana)
+
+speech.lang = "ja-JP"
+
+speech.rate = 0.9
+
+speech.pitch = 1
+
+speechSynthesis.speak(speech)
 
 }
 
-</script>
+})
+
+})
+
+  </script>
 </body>
 </html>  
