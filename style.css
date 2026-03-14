@@ -384,3 +384,9 @@ background: rgba(0,0,0,0.35);
 background: rgba(0,0,0,0.35);
 box-shadow:0 20px 60px rgba(0,0,0,0.6);
 }
+.hiragana-table td:hover{
+background:rgba(255,255,255,0.25);
+transform:scale(1.1);
+transition:0.2s;
+cursor:pointer;
+  }
