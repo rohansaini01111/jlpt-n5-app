@@ -505,3 +505,61 @@ margin-top:5px;
 font-size:14px;
 opacity:0.85;
 }
+/* MOBILE */
+@media (max-width:600px){
+
+.modules{
+gap:15px;
+max-width:300px;
+}
+
+.card{
+padding:15px 25px;
+font-size:18px;
+}
+
+.hiragana-table{
+padding:20px;
+width:95%;
+}
+
+table{
+font-size:18px;
+}
+
+}
+
+
+/* TABLET */
+
+@media (min-width:601px) and (max-width:1000px){
+
+table{
+font-size:22px;
+}
+
+.hiragana-table{
+max-width:800px;
+}
+
+}
+
+
+/* LAPTOP / DESKTOP */
+
+@media (min-width:1001px){
+
+table{
+font-size:26px;
+}
+
+.modules{
+max-width:500px;
+}
+
+.card{
+font-size:26px;
+padding:25px 40px;
+}
+
+  }
