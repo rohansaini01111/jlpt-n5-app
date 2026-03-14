@@ -288,6 +288,7 @@
 
   </div>
 <a href="index.html" class="back-btn">← Back</a>
+ 
 <script>
 
 document.querySelectorAll("td").forEach(cell => {
@@ -314,6 +315,22 @@ speechSynthesis.speak(speech)
 
 })
 
-  </script>
+const sakuraContainer = document.querySelector(".sakura-container");
+
+for(let i=0;i<20;i++){
+
+let sakura=document.createElement("div");
+sakura.classList.add("sakura");
+
+sakura.style.left=Math.random()*100+"vw";
+sakura.style.animationDuration = (5 + Math.random()*5) + "s";
+sakura.style.opacity = Math.random();
+ 
+sakuraContainer.appendChild(sakura);
+
+}
+
+ </script>
+ 
 </body>
 </html>  
