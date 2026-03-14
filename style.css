@@ -612,3 +612,55 @@ transform:translateY(0) rotate(0deg);
 transform:translateY(100vh) rotate(360deg);
 }
   }
+/* lesson header */
+
+.lesson-header{
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(18px);
+padding:20px;
+border-radius:20px;
+width:90%;
+max-width:500px;
+margin:30px auto;
+text-align:center;
+color:white;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.lesson-header p{
+font-size:14px;
+opacity:0.8;
+}
+
+/* vocabulary container */
+
+.vocab-container{
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(20px);
+padding:25px;
+border-radius:20px;
+width:90%;
+max-width:700px;
+margin:auto;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* table styling */
+
+#vocab-table{
+width:100%;
+color:white;
+border-collapse:separate;
+border-spacing:15px;
+text-align:center;
+}
+
+#vocab-table th{
+font-size:18px;
+opacity:0.9;
+}
+
+#vocab-table td{
+font-size:16px;
+padding:5px;
+  }
