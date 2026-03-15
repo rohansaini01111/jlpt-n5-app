@@ -47,7 +47,6 @@ extra: [
 }
 
 }
-
 lesson2: {
 
 main: [
