@@ -830,3 +830,31 @@ border-bottom:1px solid rgba(255,255,255,0.08);
 #vocab-table tr:hover{
 background:rgba(255,255,255,0.05);
 }
+
+/* ===== VOCAB TABLE SPACING FIX ===== */
+
+.vocab-container table{
+width:100%;
+border-collapse:separate;
+border-spacing:0 14px;   
+}
+
+/* rows ke beech gap */
+
+.vocab-container th{
+padding:14px;
+font-size:18px;
+text-align:center;
+}
+
+.vocab-container td{
+padding:16px 10px;
+font-size:17px;
+text-align:center;
+line-height:1.8;
+}
+
+.vocab-container tr{
+background:rgba(255,255,255,0.04);
+border-radius:10px;
+}
