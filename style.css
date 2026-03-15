@@ -836,10 +836,8 @@ background:rgba(255,255,255,0.05);
 .vocab-container table{
 width:100%;
 border-collapse:separate;
-border-spacing:0 14px;   
+border-spacing:0 14px;   /* rows ke beech gap */
 }
-
-/* rows ke beech gap */
 
 .vocab-container th{
 padding:14px;
