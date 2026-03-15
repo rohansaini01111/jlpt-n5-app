@@ -62,7 +62,7 @@ lesson.main.forEach(word => {
 let row = document.createElement("tr")
 
 row.innerHTML = `
-<td>${word.jp}</td>
+<td onclick="speakWord('${word.jp}','${word.en}')">${word.jp}</td>
 <td>${word.romaji}</td>
 <td>${word.en}</td>
 `
@@ -80,7 +80,7 @@ lesson.extra.forEach(word => {
 let row = document.createElement("tr")
 
 row.innerHTML = `
-<td>${word.jp}</td>
+<td onclick="speakWord('${word.jp}','${word.en}')">${word.jp}</td>
 <td>${word.romaji}</td>
 <td>${word.en}</td>
 `
@@ -106,5 +106,21 @@ speechSynthesis.speak(speech)
 })
 
 })
+
+  function speakWord(jp,en){
+
+let jpVoice = new SpeechSynthesisUtterance(jp)
+jpVoice.lang = "ja-JP"
+
+let enVoice = new SpeechSynthesisUtterance(en)
+enVoice.lang = "en-US"
+
+speechSynthesis.speak(jpVoice)
+
+setTimeout(()=>{
+speechSynthesis.speak(enVoice)
+},800)
+
+}
 
 </script>
