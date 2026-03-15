@@ -67,7 +67,7 @@ lesson.main.forEach(word => {
 let row = document.createElement("tr")
 
 row.innerHTML = `
-<td onclick="speakWord('${word.jp}','${word.en}')">${word.jp}</td>
+<td>${word.jp}</td>
 <td>${word.romaji}</td>
 <td>${word.en}</td>
 `
@@ -85,7 +85,7 @@ lesson.extra.forEach(word => {
 let row = document.createElement("tr")
 
 row.innerHTML = `
-<td onclick="speakWord('${word.jp}','${word.en}')">${word.jp}</td>
+<td>${word.jp}</td>
 <td>${word.romaji}</td>
 <td>${word.en}</td>
 `
