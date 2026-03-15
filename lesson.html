@@ -98,6 +98,16 @@ speechSynthesis.speak(speech)
 
 }
 
+function speakWord(jp){
+
+const msg = new SpeechSynthesisUtterance(jp)
+
+msg.lang = "ja-JP"
+
+speechSynthesis.speak(msg)
+
+}
+  
 </script>
 
 </body>
