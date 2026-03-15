@@ -50,8 +50,10 @@
 const params = new URLSearchParams(window.location.search)
 
 const lessonName = params.get("lesson")
+  document.getElementById("lesson-title").innerText =
+lessonName ? lessonName.replace("lesson","Lesson ") : "Lesson 1"
 
-const lesson = vocabulary[lessonName]
+const lesson = vocabulary[lessonName] || vocabulary["lesson1"]
 
 /* MAIN VOCAB */
 
