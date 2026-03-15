@@ -807,3 +807,26 @@ text-align:left;
 padding-left:20px;
 word-break:break-word;
 }
+
+/* VOCAB TABLE SPACING FIX */
+
+#vocab-table th{
+padding:16px 10px;
+font-size:18px;
+}
+
+#vocab-table td{
+padding:14px 10px;
+font-size:17px;
+line-height:1.8;
+}
+
+/* row gap effect */
+#vocab-table tr{
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+/* hover effect (optional but nice) */
+#vocab-table tr:hover{
+background:rgba(255,255,255,0.05);
+}
