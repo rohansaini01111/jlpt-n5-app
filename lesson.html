@@ -9,11 +9,12 @@
 <body>
 
 <div class="lesson-header">
-<h1 id="lesson-title">Lesson 1</h1>
+<h1 id="lesson-title">Lesson</h1>
 <p>Learn N5 Vocab Fast</p>
 </div>
-  
+
 <div class="vocab-container">
+
 <table id="vocab-table">
 
 <tr>
@@ -23,6 +24,7 @@
 </tr>
 
 </table>
+
 </div>
 
 <h2 class="section-title">Countries / Extra Words</h2>
@@ -38,36 +40,38 @@
 </tr>
 
 </table>
+
 </div>
 
 <div class="back-wrapper">
 <a class="back-btn" href="vocabulary.html">← Back</a>
 </div>
 
-<script src="vocab.js"></script>
-<script>
-  
-const params = new URLSearchParams(window.location.search)
 
-const lessonName = params.get("lesson") || "lesson1"
+<script src="vocab.js"></script>
+
+<script>
+
+const params = new URLSearchParams(window.location.search)
+let lessonName = params.get("lesson")
+
+if(!lessonName){
+lessonName = "lesson1"
+}
+
+const lesson = vocabulary[lessonName]
 
 document.getElementById("lesson-title").innerText =
 lessonName.replace("lesson","Lesson ")
 
-const lesson = vocabulary[lessonName]
+const mainTable = document.getElementById("vocab-table")
 
-if(!lesson){
-console.error("Lesson not found")
-}
-/* MAIN VOCAB */
-
-const extraTable = document.getElementById("extra-table")
 lesson.main.forEach(word => {
 
 let row = document.createElement("tr")
 
 row.innerHTML = `
-<td>${word.jp}</td>
+<td onclick="speakWord('${word.jp}')">${word.jp}</td>
 <td>${word.romaji}</td>
 <td>${word.en}</td>
 `
@@ -76,8 +80,6 @@ mainTable.appendChild(row)
 
 })
 
-/* EXTRA WORDS */
-
 const extraTable = document.getElementById("extra-table")
 
 lesson.extra.forEach(word => {
@@ -85,7 +87,7 @@ lesson.extra.forEach(word => {
 let row = document.createElement("tr")
 
 row.innerHTML = `
-<td>${word.jp}</td>
+<td onclick="speakWord('${word.jp}')">${word.jp}</td>
 <td>${word.romaji}</td>
 <td>${word.en}</td>
 `
@@ -94,47 +96,20 @@ extraTable.appendChild(row)
 
 })
 
-document.querySelectorAll("td").forEach(cell=>{
 
-cell.addEventListener("click",()=>{
-
-let text = cell.innerText
+function speakWord(text){
 
 let speech = new SpeechSynthesisUtterance(text)
 
-speech.lang="ja-JP"
+speech.lang = "ja-JP"
 
-speech.rate=0.9
+speech.rate = 0.9
 
 speechSynthesis.speak(speech)
-
-})
-
-})
-
-  function speakWord(jp,en){
-
-let jpVoice = new SpeechSynthesisUtterance(jp)
-jpVoice.lang = "ja-JP"
-
-let enVoice = new SpeechSynthesisUtterance(en)
-enVoice.lang = "en-US"
-
-speechSynthesis.speak(jpVoice)
-
-setTimeout(()=>{
-speechSynthesis.speak(enVoice)
-},800)
 
 }
-function speakWord(jp, en){
-let speech = new SpeechSynthesisUtterance(jp)
-speech.lang = "ja-JP"
-speech.rate = 0.9
-speechSynthesis.speak(speech)
-  }
-  
+
 </script>
-  
+
 </body>
 </html>
