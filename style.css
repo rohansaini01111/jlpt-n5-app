@@ -694,3 +694,25 @@ font-weight:600;
 #extra-table td:nth-child(3){
 font-size:20px;
 }
+
+.back-btn{
+display:flex;
+justify-content:center;
+margin:40px 0;
+}
+
+.back-btn a{
+padding:12px 30px;
+background:rgba(255,0,0,0.8);
+border-radius:25px;
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.back-btn a:hover{
+transform:scale(1.05);
+background:#ff2a2a;
+}
