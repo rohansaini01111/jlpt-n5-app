@@ -127,5 +127,11 @@ speechSynthesis.speak(enVoice)
 },800)
 
 }
-
+function speakWord(jp, en){
+let speech = new SpeechSynthesisUtterance(jp)
+speech.lang = "ja-JP"
+speech.rate = 0.9
+speechSynthesis.speak(speech)
+  }
+  
 </script>
