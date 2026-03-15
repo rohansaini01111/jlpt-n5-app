@@ -700,3 +700,28 @@ font-weight:600;
 box-shadow:0 6px 18px rgba(0,0,0,0.35);
 }
 
+.vocab-container{
+
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
+border-radius:20px;
+padding:20px;
+margin:30px auto;
+max-width:900px;
+
+}
+
+table{
+width:100%;
+color:white;
+border-collapse:collapse;
+}
+
+td,th{
+padding:12px;
+text-align:center;
+}
+
+td{
+cursor:pointer;
+  }
