@@ -159,4 +159,4 @@ main:[
 {jp:"たいへん",romaji:"taihen",en:"difficult"}
 
 ]
-},
+}
