@@ -909,4 +909,12 @@ white-space:nowrap;
 .vocab-container td:nth-child(3){
 width:40%;
 white-space:normal;
-  }
+}
+
+/* Meaning column alignment fix */
+
+#vocab-table td:nth-child(3),
+#vocab-table th:nth-child(3){
+text-align:left;
+padding-left:20px;
+}
