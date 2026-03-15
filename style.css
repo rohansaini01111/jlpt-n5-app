@@ -682,12 +682,13 @@ font-size:20px;
 }
 
 .back-btn{
-text-align:center;
+width:100%;
+display:flex;
+justify-content:center;
 margin:60px 0;
 }
 
 .back-btn a{
-display:inline-block;
 background:#ff4d4d;
 color:white;
 padding:12px 30px;
@@ -697,4 +698,3 @@ font-size:18px;
 font-weight:600;
 box-shadow:0 6px 18px rgba(0,0,0,0.35);
 }
-
