@@ -90,4 +90,22 @@ extraTable.appendChild(row)
 
 })
 
+document.querySelectorAll("td").forEach(cell=>{
+
+cell.addEventListener("click",()=>{
+
+let text = cell.innerText
+
+let speech = new SpeechSynthesisUtterance(text)
+
+speech.lang="ja-JP"
+
+speech.rate=0.9
+
+speechSynthesis.speak(speech)
+
+})
+
+})
+
 </script>
