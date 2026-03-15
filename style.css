@@ -724,4 +724,14 @@ text-align:center;
 
 td{
 cursor:pointer;
-  }
+}
+
+td{
+white-space: nowrap;
+font-size: 18px;
+}
+
+table{
+width:100%;
+table-layout: auto;
+}
