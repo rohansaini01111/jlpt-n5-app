@@ -881,3 +881,32 @@ text-align:center;
 .vocab-container tr{
 height:55px;
 }
+
+/* VOCAB TABLE FIX */
+
+.vocab-container table{
+width:100%;
+border-collapse:collapse;
+}
+
+.vocab-container th,
+.vocab-container td{
+padding:16px 12px;
+text-align:center;
+font-size:16px;
+}
+
+.vocab-container td:nth-child(1){
+width:30%;
+white-space:nowrap;
+}
+
+.vocab-container td:nth-child(2){
+width:30%;
+white-space:nowrap;
+}
+
+.vocab-container td:nth-child(3){
+width:40%;
+white-space:normal;
+  }
