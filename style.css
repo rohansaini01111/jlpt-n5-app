@@ -681,15 +681,15 @@ font-weight:600;
 font-size:20px;
 }
 
-.back-btn{
+.back-wrapper{
+width:100%;
 display:flex;
 justify-content:center;
-margin-top:60px;
-margin-bottom:40px;
+margin-top:40px;
+margin-bottom:60px;
 }
 
-.back-btn a{
-display:inline-block;
+.back-btn{
 background:#ff4d4d;
 color:white;
 padding:12px 30px;
@@ -699,3 +699,4 @@ font-size:18px;
 font-weight:600;
 box-shadow:0 6px 18px rgba(0,0,0,0.35);
 }
+
