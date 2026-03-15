@@ -696,12 +696,15 @@ font-size:20px;
 }
 
 .back-btn{
-display:flex;
-justify-content:center;
-margin:40px 0;
+position:fixed;
+bottom:25px;
+left:50%;
+transform:translateX(-50%);
+z-index:999;
 }
 
 .back-btn a{
+display:inline-block;
 padding:12px 35px;
 background:#ff4d4d;
 color:white;
@@ -709,5 +712,5 @@ border-radius:25px;
 text-decoration:none;
 font-size:18px;
 font-weight:600;
-box-shadow:0 6px 20px rgba(0,0,0,0.3);
+box-shadow:0 6px 20px rgba(0,0,0,0.35);
 }
