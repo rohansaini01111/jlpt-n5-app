@@ -856,3 +856,28 @@ line-height:1.8;
 background:rgba(255,255,255,0.04);
 border-radius:10px;
 }
+
+/* ===== VOCAB TABLE PROPER SPACING ===== */
+
+.vocab-container table{
+width:100%;
+border-collapse:collapse;
+}
+
+.vocab-container th{
+padding:18px 10px;
+font-size:18px;
+text-align:center;
+}
+
+.vocab-container td{
+padding:18px 10px;
+font-size:17px;
+line-height:2.2;
+text-align:center;
+}
+
+/* rows ke beech visual gap */
+.vocab-container tr{
+height:55px;
+}
