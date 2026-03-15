@@ -49,12 +49,16 @@
   
 const params = new URLSearchParams(window.location.search)
 
-const lessonName = params.get("lesson")
-  document.getElementById("lesson-title").innerText =
-lessonName ? lessonName.replace("lesson","Lesson ") : "Lesson 1"
+const lessonName = params.get("lesson") || "lesson1"
 
-const lesson = vocabulary[lessonName] || vocabulary["lesson1"]
+document.getElementById("lesson-title").innerText =
+lessonName.replace("lesson","Lesson ")
 
+const lesson = vocabulary[lessonName]
+
+if(!lesson){
+console.error("Lesson not found")
+}
 /* MAIN VOCAB */
 
 const extraTable = document.getElementById("extra-table")
