@@ -62,22 +62,6 @@ mainTable.appendChild(row)
 
 })
 
-const extraTable = document.getElementById("extra-table")
-
-lesson.extra.forEach(word => {
-
-let row = document.createElement("tr")
-
-row.innerHTML = `
-<td onclick="speak('${word.jp}')">${word.jp}</td>
-<td>${word.romaji}</td>
-<td>${word.en}</td>
-`
-
-extraTable.appendChild(row)
-
-})
-
 function speak(text){
 
 let speech = new SpeechSynthesisUtterance(text)
