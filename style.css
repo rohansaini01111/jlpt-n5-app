@@ -669,20 +669,6 @@ padding:12px;
 font-size:24px;
 font-weight:bold;
   }
-.back-btn{
-text-align:center;
-margin:40px 0;
-}
-
-.back-btn a{
-padding:12px 25px;
-background:rgba(255,255,255,0.2);
-backdrop-filter: blur(10px);
-border-radius:10px;
-color:white;
-text-decoration:none;
-font-size:18px;
-}
 
 #vocab-table td:nth-child(2),
 #extra-table td:nth-child(2){
