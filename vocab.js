@@ -73,12 +73,46 @@ main: [
 {jp:"かぎ", romaji:"kagi", en:"key"},
 {jp:"とけい", romaji:"tokei", en:"watch"},
 {jp:"かさ", romaji:"kasa", en:"umbrella"},
-{jp:"かばん", romaji:"kaban", en:"bag"}
+{jp:"かばん", romaji:"kaban", en:"bag"},
+
+{jp:"テープ", romaji:"teepu", en:"tape"},
+{jp:"テープレコーダー", romaji:"teepurekoodaa", en:"tape recorder"},
+{jp:"テレビ", romaji:"terebi", en:"television"},
+{jp:"ラジオ", romaji:"rajio", en:"radio"},
+{jp:"カメラ", romaji:"kamera", en:"camera"},
+{jp:"コンピューター", romaji:"konpyuutaa", en:"computer"},
+
+{jp:"くるま", romaji:"kuruma", en:"car"},
+{jp:"つくえ", romaji:"tsukue", en:"desk"},
+{jp:"いす", romaji:"isu", en:"chair"},
+
+{jp:"チョコレート", romaji:"chokoreeto", en:"chocolate"},
+{jp:"コーヒー", romaji:"koohii", en:"coffee"},
+
+{jp:"えいご", romaji:"eigo", en:"English language"},
+{jp:"にほんご", romaji:"nihongo", en:"Japanese language"},
+{jp:"〜ご", romaji:"go", en:"language suffix"},
+
+{jp:"なん", romaji:"nan", en:"what"},
+{jp:"そう", romaji:"sou", en:"so"},
+{jp:"ちがいます", romaji:"chigaimasu", en:"not correct / different"},
+{jp:"そうですか", romaji:"sou desu ka", en:"I see"},
+
+{jp:"あのう", romaji:"anou", en:"well / excuse me"},
+{jp:"ほんのきもちです", romaji:"honno kimochi desu", en:"it's just a small gift"},
+{jp:"どうぞ", romaji:"douzo", en:"please"},
+{jp:"どうも", romaji:"doumo", en:"thanks"},
+{jp:"ありがとうございます", romaji:"arigatou gozaimasu", en:"thank you"},
+{jp:"どうもありがとうございます", romaji:"doumo arigatou gozaimasu", en:"thank you very much"},
+{jp:"これからおせわになります", romaji:"korekara osewa ni narimasu", en:"please take care of me"},
+{jp:"こちらこそよろしく", romaji:"kochira koso yoroshiku", en:"same to you"},
+{jp:"よろしくおねがいします", romaji:"yoroshiku onegaishimasu", en:"please treat me well"},
+{jp:"こちら", romaji:"kochira", en:"this way"},
+{jp:"どれ", romaji:"dore", en:"which"},
+{jp:"どの", romaji:"dono", en:"which (before noun)"}
 
 ],
 
 extra: []
 
-}
-
-}
+ }
