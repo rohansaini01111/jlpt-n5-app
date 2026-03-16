@@ -84,8 +84,3 @@ main:[
 extra:[]
 },
 
-lesson3:{main:[],extra:[]},
-lesson4:{main:[],extra:[]},
-lesson5:{main:[],extra:[]}
-
-}
