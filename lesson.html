@@ -26,4 +26,48 @@
 
 </div>
 
+<script src="vocab.js"></script>
 
+<script>
+
+const params = new URLSearchParams(window.location.search)
+const lessonName = params.get("lesson") || "lesson1"
+
+document.getElementById("lesson-title").innerText =
+lessonName.replace("lesson","Lesson ")
+
+let lesson = vocabulary[lessonName]
+
+if(!lesson){
+console.error("Lesson not found:", lessonName)
+lesson = {main:[],extra:[]}
+}
+
+const mainTable = document.getElementById("vocab-table")
+
+;(lesson.main || []).forEach(word => {
+
+let row = document.createElement("tr")
+
+row.innerHTML = `
+<td onclick="speak('${word.jp}')">${word.jp}</td>
+<td>${word.romaji}</td>
+<td>${word.en}</td>
+`
+
+mainTable.appendChild(row)
+
+})
+
+function speak(text){
+
+let speech = new SpeechSynthesisUtterance(text)
+
+speech.lang = "ja-JP"
+speech.rate = 0.9
+
+speechSynthesis.speak(speech)
+
+}
+
+</script>
